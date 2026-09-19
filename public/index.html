@@ -163,11 +163,10 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section id="home" class="gradient-hero relative min-h-screen flex items-center overflow-hidden">
-        <div class="absolute inset-0 overflow-hidden">
-            <div class="absolute -top-40 -right-40 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-300/10 rounded-full blur-3xl"></div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl"></div>
+    <section id="home" class="relative min-h-screen flex items-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="IMG-20260918-WA0037.jpg" alt="Rusha Electronics Store" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-950/90 via-brand-900/80 to-brand-800/60"></div>
         </div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -215,16 +214,20 @@
                     </div>
                 </div>
                 <div class="hidden md:block relative">
-                    <div class="rounded-3xl overflow-hidden relative shadow-2xl">
-                        <img src="IMG-20260918-WA0037.jpg" alt="Rusha Electronics Store Interior" class="w-full h-80 object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-900/60 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 right-4 text-white">
-                            <p class="font-bold text-lg">Visit Our Shop</p>
-                            <p class="text-white/80 text-sm">Kakoba, Mbarara - Near Bishop Stuart University</p>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="rounded-2xl overflow-hidden shadow-2xl h-48">
+                            <img src="IMG-20260918-WA0019.jpg" alt="Accessories Wall" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
-                    </div>
-                    <div class="absolute -top-4 -right-4 bg-green-500 text-white rounded-xl px-4 py-2 text-sm font-bold shadow-lg">
-                        Open Now
+                        <div class="rounded-2xl overflow-hidden shadow-2xl h-48">
+                            <img src="IMG-20260918-WA0010.jpg" alt="Phones Display" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="col-span-2 rounded-2xl overflow-hidden shadow-2xl h-56 relative">
+                            <img src="IMG-20260918-WA0023.jpg" alt="Rusha Electronics Interior" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                <p class="text-white font-bold">Our Shop in Kakoba</p>
+                                <p class="text-white/70 text-sm">Near Bishop Stuart University</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -308,24 +311,35 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10 fade-in">
                 <span class="inline-block bg-brand-100 text-brand-700 text-sm font-bold px-4 py-1.5 rounded-full mb-4">OUR STORE</span>
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Inside Rusha Electronics</h2>
-                <p class="text-gray-500 max-w-2xl mx-auto">Browse our fully stocked shelves with the latest gadgets and accessories.</p>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Step Inside Rusha Electronics</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Fully stocked with the latest gadgets, accessories, and electronics in Kakoba, Mbarara.</p>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-in">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 fade-in">
                 <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-lg">
-                    <img src="IMG-20260918-WA0037.jpg" alt="Rusha Electronics Full Store" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:300px">
+                    <img src="IMG-20260918-WA0037.jpg" alt="Rusha Electronics Full Store" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:400px">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="IMG-20260918-WA0010.jpg" alt="Phones Display" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:145px">
+                    <img src="IMG-20260918-WA0010.jpg" alt="Phones Display" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:190px">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="IMG-20260918-WA0019.jpg" alt="Accessories Wall" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:145px">
+                    <img src="IMG-20260918-WA0019.jpg" alt="Accessories Wall" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:190px">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="IMG-20260918-WA0021.jpg" alt="LED Bulbs and Gadgets" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:145px">
+                    <img src="IMG-20260918-WA0021.jpg" alt="LED Bulbs and Gadgets" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:190px">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="IMG-20260918-WA0023.jpg" alt="TV and Electronics" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:145px">
+                    <img src="IMG-20260918-WA0023.jpg" alt="TV and Electronics" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:190px">
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mt-4 fade-in">
+                <div class="rounded-2xl overflow-hidden shadow-lg">
+                    <img src="IMG-20260918-WA0036.jpg" alt="Chargers and Power Banks" class="gallery-img w-full h-48 object-cover" loading="lazy">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg">
+                    <img src="IMG-20260918-WA0002.jpg" alt="Extension Cables" class="gallery-img w-full h-48 object-cover" loading="lazy">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg">
+                    <img src="IMG-20260918-WA0015.jpg" alt="Earphones Collection" class="gallery-img w-full h-48 object-cover" loading="lazy">
                 </div>
             </div>
         </div>
@@ -630,6 +644,13 @@
             </div>
             <div class="grid md:grid-cols-2 gap-8 fade-in">
                 <div class="space-y-6">
+                    <div class="rounded-2xl overflow-hidden shadow-lg relative">
+                        <img src="IMG-20260918-WA0037.jpg" alt="Rusha Electronics Shop Front" class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <p class="text-white font-bold">Find Us in Kakoba</p>
+                            <p class="text-white/70 text-sm">Near Bishop Stuart University Main Gate</p>
+                        </div>
+                    </div>
                     <div class="flex items-start gap-4 bg-gray-50 rounded-2xl p-6 border border-gray-100">
                         <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center flex-shrink-0">
                             <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -667,18 +688,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-100 rounded-2xl overflow-hidden shadow-lg border border-gray-200 min-h-[400px]">
-                    <!-- Google Maps Embed - Replace with your actual location -->
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.123456789!2d30.6!3d-0.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMzYnMDAuMCJTIDMwwrAzNicwMC4wRQ!5e0!3m2!1sen!2sug!4v1234567890"
-                        width="100%" 
-                        height="100%" 
-                        style="border:0; min-height: 400px;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Rusha Electronics Location - Kakoba, Mbarara">
-                    </iframe>
+                <div class="space-y-4">
+                    <div class="bg-gray-100 rounded-2xl overflow-hidden shadow-lg border border-gray-200" style="height:300px">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6!2d30.63!3d-0.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMzYnMDAuMCJTIDMwwrAzNicwMC4wRQ!5e0!3m2!1sen!2sug!4v1700000000000"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Rusha Electronics - Kakoba, Mbarara">
+                        </iframe>
+                    </div>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="rounded-xl overflow-hidden shadow-md h-24">
+                            <img src="IMG-20260918-WA0023.jpg" alt="Shop Interior" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <div class="rounded-xl overflow-hidden shadow-md h-24">
+                            <img src="IMG-20260918-WA0036.jpg" alt="Accessories Display" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <div class="rounded-xl overflow-hidden shadow-md h-24">
+                            <img src="IMG-20260918-WA0021.jpg" alt="Electronics Wall" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
