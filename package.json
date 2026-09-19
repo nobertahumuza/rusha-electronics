@@ -1,0 +1,21 @@
+{
+  "name": "rusha-electronics",
+  "version": "1.0.0",
+  "description": "Rusha Electronics - Quality Gadgets & Repairs in Kakoba, Mbarara. Near Bishop Stuart University.",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve public",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [
+    "electronics",
+    "mbarara",
+    "kakoba",
+    "uganda",
+    "phones",
+    "accessories",
+    "repairs"
+  ],
+  "author": "Rusha Electronics",
+  "license": "MIT"
+}
