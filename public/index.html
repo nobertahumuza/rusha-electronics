@@ -209,7 +209,11 @@
                 <a href="#products" class="block py-3 px-4 text-white/90 hover:bg-white/10 rounded-lg font-medium transition">Products</a>
                 <a href="#services" class="block py-3 px-4 text-white/90 hover:bg-white/10 rounded-lg font-medium transition">Services</a>
                 <a href="#order" class="block py-3 px-4 text-white/90 hover:bg-white/10 rounded-lg font-medium transition">Order</a>
-                <a href="#contact" class="block py-3 px-4 text-white/90 hover:bg-white/10 rounded-lg font-medium transition">Contact</a>
+                
+                        <a href="dashboard.html" class="px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full text-sm font-semibold hover:from-purple-700 hover:to-blue-700 transition-all shadow-lg">
+                            <i class="fas fa-chart-line mr-1"></i> Dashboard
+                        </a>
+                    <a href="#contact" class="block py-3 px-4 text-white/90 hover:bg-white/10 rounded-lg font-medium transition">Contact</a>
             </div>
         </div>
     </nav>
@@ -217,7 +221,7 @@
     <!-- HERO SECTION -->
     <section id="home" class="relative min-h-screen flex items-center overflow-hidden">
         <div class="absolute inset-0">
-            <img src="IMG-20260921-WA0035.jpg" alt="Rusha Electronics Shop Front" class="w-full h-full object-cover">
+            <img src="IMG-20260921-WA0016.jpg" alt="Rusha Electronics Shop Front" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-r from-brand-950/90 via-brand-900/80 to-brand-800/60"></div>
         </div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
@@ -278,7 +282,7 @@
                             <img src="IMG-20260918-WA0010.jpg" alt="Phones Display" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="col-span-2 rounded-2xl overflow-hidden shadow-2xl h-56 relative">
-                            <img src="IMG-20260921-WA0017.jpg" alt="Rusha Electronics Shop Interior" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                            <img src="20260921_222456.jpg" alt="Rusha Electronics Shop Interior" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                             <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                                 <p class="text-white font-bold">Our Shop in Kakoba</p>
                                 <p class="text-white/70 text-sm">Near Bishop Stuart University</p>
@@ -396,10 +400,10 @@
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 fade-in">
                 <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-lg">
-                    <img src="IMG-20260921-WA0017.jpg" alt="Rusha Electronics Full Shop Interior" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:400px">
+                    <img src="20260921_222456.jpg" alt="Rusha Electronics Full Shop Interior" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:400px">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="IMG-20260918-WA0010.jpg" alt="Phones Display" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:190px">
+                    <img src="20260921_214644.jpg" alt="Infinix Phones Display" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:190px">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
                     <img src="IMG-20260921-WA0035.jpg" alt="Accessories Display Case" class="gallery-img w-full h-full object-cover" loading="lazy" style="min-height:190px">
@@ -530,6 +534,7 @@
             <!-- Category Filter -->
             <div class="flex flex-wrap justify-center gap-3 mb-10 fade-in">
                 <button onclick="filterProducts('all')" class="filter-btn active px-5 py-2 rounded-full text-sm font-semibold border-2 border-brand-500 bg-brand-500 text-white transition-all" data-filter="all">All</button>
+
                 <button onclick="filterProducts('phones')" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border-2 border-gray-200 text-gray-600 hover:border-brand-300 transition-all" data-filter="phones">Phones</button>
                 <button onclick="filterProducts('accessories')" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border-2 border-gray-200 text-gray-600 hover:border-brand-300 transition-all" data-filter="accessories">Cables & Drives</button>
                 <button onclick="filterProducts('audio')" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border-2 border-gray-200 text-gray-600 hover:border-brand-300 transition-all" data-filter="audio">Audio</button>
@@ -983,12 +988,14 @@
             { id: 10, name: 'Super Bass Pro Headphones', category: 'audio', price: 'UGX 10,000', image: 'IMG-20260921-WA0018.jpg', badge: '', desc: 'Housing AAA Grade, In-Ear' },
             { id: 11, name: 'Oraimo Wireless Headphones', category: 'audio', price: 'UGX 85,000', image: 'IMG-20260921-WA0018.jpg', badge: 'New', desc: 'Born For Music, Bluetooth' },
             { id: 12, name: 'Wired Earphones', category: 'audio', price: 'UGX 8,000', image: 'IMG-20260918-WA0032.jpg', badge: '', desc: '3.5mm Jack, With Mic' },
-            { id: 13, name: 'Bluetooth Speaker', category: 'audio', price: 'UGX 55,000', image: 'IMG-20260918-WA0037.jpg', badge: '', desc: 'Portable, Waterproof' },
+            { id: 13, name: 'Bluetooth Speaker', category: 'audio', price: 'UGX 55,000', image: '20260921_214834.jpg', badge: '', desc: 'Portable, Waterproof' },
             { id: 14, name: 'Oraimo Fast Charger Adapter', category: 'power', price: 'UGX 30,000', image: 'IMG-20260921-WA0035.jpg', badge: 'Popular', desc: '2A USB Wall Charger' },
-            { id: 15, name: 'Power King Extension 3M', category: 'power', price: 'UGX 20,000', image: 'IMG-20260918-WA0002.jpg', badge: '', desc: '3M, 13A Fused Socket' },
+            { id: 15, name: 'Power King Extension 3M', category: 'power', price: 'UGX 20,000', image: '20260921_215009.jpg', badge: '', desc: '3M, 13A Fused Socket' },
             { id: 16, name: 'Power Bank 20000mAh', category: 'power', price: 'UGX 65,000', image: 'IMG-20260918-WA0036.jpg', badge: '', desc: 'Dual USB, Fast Charge' },
-            { id: 17, name: 'Smartwatch Band', category: 'power', price: 'UGX 45,000', image: 'IMG-20260918-WA0029.jpg', badge: '', desc: 'Health Tracking, Bluetooth' },
+            { id: 17, name: 'Smartwatch Band', category: 'power', price: 'UGX 45,000', image: '20260921_214750.jpg', badge: '', desc: 'Health Tracking, Bluetooth' },
             { id: 18, name: 'Honor LED Bulb 12W', category: 'lighting', price: 'UGX 8,000', image: 'IMG-20260921-WA0020.jpg', badge: '', desc: 'Energy Saving, Bright White' },
+            { id: 19, name: 'Infinix Hot 50i', category: 'phones', price: 'UGX 450,000', image: '20260921_214616.jpg', badge: 'New', desc: '4GB RAM, 128GB ROM, 50MP Camera' },
+            { id: 20, name: 'Oraimo Headphones OR-09', category: 'audio', price: 'UGX 35,000', image: '20260921_214805.jpg', badge: '', desc: 'Born For Music, Wired with Mic' },
         ];
 
         function renderProducts(filter = 'all') {
@@ -1111,6 +1118,7 @@
     </script>
 </body>
 </html>
+
 
 
 
