@@ -6,7 +6,31 @@
     <title>Rusha Electronics | Quality Gadgets & Repairs in Kakoba, Mbarara</title>
     <meta name="description" content="Rusha Electronics - Your trusted source for quality electronic gadgets, accessories, and device repairs in Kakoba, Mbarara. Near Bishop Stuart University.">
     <link rel="icon" type="image/png" href="badge.png">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com">
+        function submitFeedback(e) {
+            e.preventDefault();
+            const name = document.getElementById("fbName").value;
+            const role = document.getElementById("fbRole").value;
+            const rating = document.getElementById("fbRating").value;
+            const message = document.getElementById("fbMessage").value;
+            const email = document.getElementById("fbEmail").value;
+            if (!name || !role || !message || rating === "0") { alert("Please fill all fields and select a rating."); return; }
+            const msg = encodeURIComponent(`New feedback from ${name} (${role})! Rating: ${"★".repeat(rating)}${"☆".repeat(5-rating)} Message: ${message}`);
+            document.getElementById("feedbackMsg").classList.remove("hidden");
+            document.getElementById("feedbackForm").reset();
+            document.getElementById("fbRating").value = "0";
+            document.querySelectorAll("#ratingStars button").forEach(b => { b.classList.remove("text-yellow-400"); b.classList.add("text-gray-300"); });
+            window.open(`https://wa.me/256785759187?text=${msg}`, "_blank");
+        }
+        function setRating(n) {
+            document.getElementById("fbRating").value = n;
+            const stars = document.querySelectorAll("#ratingStars button");
+            stars.forEach((star, i) => {
+                if (i < n) { star.classList.remove("text-gray-300"); star.classList.add("text-yellow-400"); }
+                else { star.classList.remove("text-yellow-400"); star.classList.add("text-gray-300"); }
+            });
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght\@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script>
@@ -34,6 +58,30 @@
                     },
                 }
             }
+        }
+    
+        function submitFeedback(e) {
+            e.preventDefault();
+            const name = document.getElementById("fbName").value;
+            const role = document.getElementById("fbRole").value;
+            const rating = document.getElementById("fbRating").value;
+            const message = document.getElementById("fbMessage").value;
+            const email = document.getElementById("fbEmail").value;
+            if (!name || !role || !message || rating === "0") { alert("Please fill all fields and select a rating."); return; }
+            const msg = encodeURIComponent(`New feedback from ${name} (${role})! Rating: ${"★".repeat(rating)}${"☆".repeat(5-rating)} Message: ${message}`);
+            document.getElementById("feedbackMsg").classList.remove("hidden");
+            document.getElementById("feedbackForm").reset();
+            document.getElementById("fbRating").value = "0";
+            document.querySelectorAll("#ratingStars button").forEach(b => { b.classList.remove("text-yellow-400"); b.classList.add("text-gray-300"); });
+            window.open(`https://wa.me/256785759187?text=${msg}`, "_blank");
+        }
+        function setRating(n) {
+            document.getElementById("fbRating").value = n;
+            const stars = document.querySelectorAll("#ratingStars button");
+            stars.forEach((star, i) => {
+                if (i < n) { star.classList.remove("text-gray-300"); star.classList.add("text-yellow-400"); }
+                else { star.classList.remove("text-yellow-400"); star.classList.add("text-gray-300"); }
+            });
         }
     </script>
     <style>
@@ -1120,9 +1168,34 @@
 
         // Init
         renderProducts();
+    
+        function submitFeedback(e) {
+            e.preventDefault();
+            const name = document.getElementById("fbName").value;
+            const role = document.getElementById("fbRole").value;
+            const rating = document.getElementById("fbRating").value;
+            const message = document.getElementById("fbMessage").value;
+            const email = document.getElementById("fbEmail").value;
+            if (!name || !role || !message || rating === "0") { alert("Please fill all fields and select a rating."); return; }
+            const msg = encodeURIComponent(`New feedback from ${name} (${role})! Rating: ${"★".repeat(rating)}${"☆".repeat(5-rating)} Message: ${message}`);
+            document.getElementById("feedbackMsg").classList.remove("hidden");
+            document.getElementById("feedbackForm").reset();
+            document.getElementById("fbRating").value = "0";
+            document.querySelectorAll("#ratingStars button").forEach(b => { b.classList.remove("text-yellow-400"); b.classList.add("text-gray-300"); });
+            window.open(`https://wa.me/256785759187?text=${msg}`, "_blank");
+        }
+        function setRating(n) {
+            document.getElementById("fbRating").value = n;
+            const stars = document.querySelectorAll("#ratingStars button");
+            stars.forEach((star, i) => {
+                if (i < n) { star.classList.remove("text-gray-300"); star.classList.add("text-yellow-400"); }
+                else { star.classList.remove("text-yellow-400"); star.classList.add("text-gray-300"); }
+            });
+        }
     </script>
 </body>
 </html>
+
 
 
 
